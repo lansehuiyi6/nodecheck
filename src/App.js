@@ -1,42 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import Web3 from 'web3';
 
-// 以太坊节点列表
-const ethNodes = [
-  'https://rpc.ankr.com/eth',
-  'https://endpoints.omniatech.io/v1/eth/mainnet/public',
-  'https://ethereum.publicnode.com'
-];
+import './App.css';
 
-// 合约地址
-const contractAddress = '0xb8460Eeaa06Bc6668dad9fd42B661C0B96b3bE57';
 const contractAbi = require('./abi/abi.CrossDelegate.json');
 
+// 读取本地json文件的函数
+const readLocalJsonFile = (file) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const json = JSON.parse(event.target.result);
+        resolve(json);
+      } catch (error) {
+        reject(error);
+      }
+    };
+    reader.onerror = (error) => {
+      reject(error);
+    };
+    reader.readAsText(file);
+  });
+};
+
 // 查询最近的区块事件
-const queryContractEvents = async (web3, blockNumber) => {
+const queryContractEvents = async (web3, blockNumber, contractAddress) => {
   const contract = new web3.eth.Contract(contractAbi, contractAddress);
   const events = await contract.getPastEvents('allEvents', {
-    fromBlock: blockNumber,
+    fromBlock: (parseInt(blockNumber) - 1000).toString(),
     toBlock: 'latest'
   });
   return events.length;
 };
 
-const EthNodeStatus = () => {
+const EthNodeStatus = ({ chainType, chainNodes }) => {
   const [nodeStatus, setNodeStatus] = useState([]);
 
   useEffect(() => {
     const fetchNodeStatus = async () => {
-      const statusPromises = ethNodes.map(async (node, index) => {
+      const nodes = chainNodes[chainType]?.nodeUrlArray || [];
+      const contractAddress = chainNodes[chainType]?.contractAddress || '';
+
+      const statusPromises = nodes.map(async (node, index) => {
         try {
           const web3 = new Web3(new Web3.providers.HttpProvider(node));
           const blockStartTime = new Date().getTime();
-          const blockNumber = await web3.eth.getBlockNumber();
+          const blockNumber = (await web3.eth.getBlockNumber()).toString();
           const blockEndTime = new Date().getTime();
           const blockTimeTaken = blockEndTime - blockStartTime;
 
           const eventStartTime = new Date().getTime();
-          const length = await queryContractEvents(web3, blockNumber);
+          const length = await queryContractEvents(web3, blockNumber, contractAddress);
           const eventEndTime = new Date().getTime();
           const eventTimeTaken = eventEndTime - eventStartTime;
 
@@ -62,11 +77,19 @@ const EthNodeStatus = () => {
     };
 
     fetchNodeStatus();
-  }, []);
+
+    // Refresh data every 10 seconds
+    const interval = setInterval(fetchNodeStatus, 1000);
+
+    // Cleanup the interval on component unmount
+    return () => {
+      clearInterval(interval);
+    };
+  }, [chainType, chainNodes]);
 
   return (
-    <div>
-      <h2>RPC URL List</h2>
+    <div className="node-div">
+      <h2>Chain Type: {chainType}</h2>
       <table className="node-status-table">
         <thead>
           <tr>
@@ -105,10 +128,46 @@ const EthNodeStatus = () => {
   );
 };
 
-const App = () => {
+
+const FileInput = ({ onFileSelected }) => {
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      onFileSelected(file);
+    }
+  };
+
   return (
     <div>
-      <EthNodeStatus />
+      <input type="file" accept=".json" onChange={handleFileChange} />
+    </div>
+  );
+};
+
+const App = () => {
+  const [chainNodes, setChainNodes] = useState(null);
+
+  const handleFileSelected = async (file) => {
+    try {
+      const json = await readLocalJsonFile(file);
+      setChainNodes(json);
+    } catch (error) {
+      console.error('Error reading JSON file:', error);
+    }
+  };
+
+  return (
+    <div>
+      <FileInput onFileSelected={handleFileSelected} />
+      {chainNodes ? (
+        <div>
+          {Object.entries(chainNodes).map(([chainType, config]) => (
+            <EthNodeStatus key={chainType} chainType={chainType} chainNodes={chainNodes} />
+          ))}
+        </div>
+      ) : (
+        <div>No chain nodes data loaded.</div>
+      )}
     </div>
   );
 };
