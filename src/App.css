@@ -1,0 +1,30 @@
+.node-status-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.node-status-table th,
+.node-status-table td {
+  padding: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.node-status-table th::before,
+.node-status-table td::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+
+.node-status-table th::before {
+  z-index: -1;
+}
+
+.node-status-table th {
+  background-color: #f2f2f2;
+}
