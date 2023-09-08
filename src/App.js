@@ -10,7 +10,7 @@ ReactModal.setAppElement('#root');
 
 const contractAbi = require('./abi/abi.CrossDelegate.json');
 
-global.testnet = true;
+global.testnet = false;
 
 global.isExpanded = true;
 
