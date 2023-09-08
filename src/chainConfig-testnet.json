@@ -1,0 +1,138 @@
+{
+  "AVAX": {
+    "nodeUrlArray": [
+      "https://api.avax-test.network/ext/bc/C/rpc"
+    ],
+    "contractAddress": "0x4c200a0867753454db78af84d147bd03e567f234"
+  },
+  "ARB": {
+    "nodeUrlArray": [
+      "https://goerli-rollup.arbitrum.io/rpc"
+    ],
+    "contractAddress": "0x3e18014f7c11f4d70b0023d8f61350a3ef8f0978"
+  },
+  "BSC": {
+    "nodeUrlArray": [
+      "https://bsc-testnet.publicnode.com"
+    ],
+    "contractAddress": "0xb12513cfcb13b7be59ba431c040b7206b0a211b9"
+  },
+  "ETH": {
+    "nodeUrlArray": [
+      "https://ethereum-goerli.publicnode.com"
+    ],
+    "contractAddress": "0xb8460eeaa06bc6668dad9fd42b661c0b96b3be57"
+  },
+  "MATIC": {
+    "nodeUrlArray": [
+      "https://polygon-mumbai-bor.publicnode.com"
+    ],
+    "contractAddress": "0xb5bf1013898a93f0bd902f6e346ed6cbb627b791"
+  },
+  "MOONBEAM": {
+    "nodeUrlArray": [
+      "https://moonbeam-alpha.api.onfinality.io/public"
+    ],
+    "contractAddress": "0x9274be9167c7dba7f81b61d3870e0272cb8474f6"
+  },
+  "WAN": {
+    "intervalTime": 2000,
+    "nodeUrlArray": [
+      "https://nodes-testnet.wandevs.org/wan"
+    ],
+    "contractAddress": "0x62de27e16f6f31d9aa5b02f4599fc6e21b339e79"
+  },
+  "FTM": {
+    "nodeUrlArray": [
+      "https://xapi.testnet.fantom.network/lachesis"
+    ],
+    "contractAddress": "0x265fc66e84939f36d90ee38734afe4a770d2c114"
+  },
+  "OPT": {
+    "intervalTime": 2000,
+    "nodeUrlArray": [
+      "https://goerli.optimism.io"
+    ],
+    "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
+  },
+  "XDC": {
+    "nodeUrlArray": [
+      "https://erpc.apothem.network"
+    ],
+    "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
+  },
+  "OKT": {
+    "range": 300,
+    "nodeUrlArray": [
+      "https://exchaintestrpc.okex.org"
+    ],
+    "contractAddress": "0x5292b2936dad44edfbfb2929f9f246304167843b"
+  },
+  "CLV": {
+    "nodeUrlArray": [
+      "https://api-para.clover.finance"
+    ],
+    "contractAddress": "0xcef19151f44fc3df678554f35c1dd7f29afacde8"
+  },
+  "FX": {
+    "nodeUrlArray": [
+      "https://testnet-fx-json-web3.functionx.io:8545"
+    ],
+    "contractAddress": "0x4f1ab74c2a9e8f591e8a80768e115c9f75935bad"
+  },
+  "ZEN": {
+    "nodeUrlArray": [
+      "https://gobi-rpc.horizenlabs.io/ethv1"
+    ],
+    "contractAddress": "0x6e81e127a280cd17bebc7704ce28a0226295a12b"
+  },
+  "TLOS": {
+    "nodeUrlArray": [
+      "https://testnet.telos.net/evm"
+    ],
+    "contractAddress": "0xfc9a863edfea47f6e4e6954be978d447133d87ce"
+  },
+  "METIS": {
+    "nodeUrlArray": [
+      "https://goerli.gateway.metisdevops.link"
+    ],
+    "contractAddress": "0xfc9a863edfea47f6e4e6954be978d447133d87ce"
+  },
+  "GTH": {
+    "nodeUrlArray": [
+      "https://testnet.gather.network"
+    ],
+    "contractAddress": "0x7e0195a43a5dd27c507a1f0b2371d543c9e4dfc9"
+  },
+  "OKB": {
+    "nodeUrlArray": [
+      "https://okbtestrpc.okbchain.org"
+    ],
+    "contractAddress": "0x4a9f99ceb037e8c4fbec272d17d40282aa67d9c6"
+  },
+  "SGB": {
+    "range": 30,
+    "nodeUrlArray": [
+      "https://coston-api.flare.network/ext/C/rpc"
+    ],
+    "contractAddress": "0xfc9a863edfea47f6e4e6954be978d447133d87ce"
+  },
+  "MATICETH": {
+    "nodeUrlArray": [
+      "https://rpc.public.zkevm-test.net"
+    ],
+    "contractAddress": "0xdf9efdc523407e8657a2d4f1ef4dd2aca51ceabb"
+  },
+  "ASTR": {
+    "nodeUrlArray": [
+      "https://evm.shibuya.astar.network"
+    ],
+    "contractAddress": "0x0758fe272ab2dedcd182b84d3e3f9310f21a4153"
+  },
+  "ZKETH": {
+    "nodeUrlArray": [
+      "https://testnet.era.zksync.dev"
+    ],
+    "contractAddress": "0xa2374ca12c744d6297c1954149b3e912742a782d"
+  }
+}
