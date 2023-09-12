@@ -57,7 +57,7 @@ const EthNodeStatus = ({ chainType, chainNodes, isAllExpanded }) => {
       }
       const nodes = chainNodes[chainType]?.nodeUrlArray || [];
       const contractAddress = chainNodes[chainType]?.contractAddress || '';
-      const range = chainNodes[chainType]?.range || 1000;
+      const range = chainNodes[chainType]?.range || 2000;
 
       const statusPromises = nodes.map(async (node, index) => {
         try {
