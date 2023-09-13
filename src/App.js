@@ -14,7 +14,7 @@ global.testnet = false;
 
 global.isExpanded = true;
 
-const defaultConfig = global.testnet ? require('./chainConfig-testnet.json') : require('./chainConfig.json');
+const defaultConfig = global.testnet ? require('./chainConfig-testnet.json') : require('./chainConfig-mainnet-set.json');
 
 // 读取本地json文件的函数
 const readLocalJsonFile = (file) => {
