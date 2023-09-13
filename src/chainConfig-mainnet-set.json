@@ -47,7 +47,7 @@
     ],
     "contractAddress": "0x6372aec6263aa93eacedc994d38aa9117b6b95b5"
   },
-  "MOONBEAM": {
+  "MOONRIVER": {
     "nodeUrlArray": [
       "https://moonriver.api.onfinality.io/public",
       "https://moonriver-rpc.dwellir.com"
