@@ -1,25 +1,31 @@
 {
   "AVAX": {
     "nodeUrlArray": [
-      "https://api.avax-test.network/ext/bc/C/rpc"
+      "https://api.avax-test.network/ext/bc/C/rpc",
+      "https://rpc.ankr.com/avalanche_fuji",
+      "https://avalanche-fuji-c-chain.publicnode.com"
     ],
     "contractAddress": "0x4c200a0867753454db78af84d147bd03e567f234"
   },
   "ARB": {
     "nodeUrlArray": [
-      "https://goerli-rollup.arbitrum.io/rpc"
+      "https://goerli-rollup.arbitrum.io/rpc",
+      "https://arbitrum-goerli.publicnode.com"
     ],
     "contractAddress": "0x3e18014f7c11f4d70b0023d8f61350a3ef8f0978"
   },
   "BSC": {
     "nodeUrlArray": [
       "https://bsc-testnet.publicnode.com"
+
     ],
     "contractAddress": "0xb12513cfcb13b7be59ba431c040b7206b0a211b9"
   },
   "ETH": {
     "nodeUrlArray": [
-      "https://ethereum-goerli.publicnode.com"
+      "https://ethereum-goerli.publicnode.com",
+      "https://eth-goerli.api.onfinality.io/public"
+
     ],
     "contractAddress": "0xb8460eeaa06bc6668dad9fd42b661c0b96b3be57"
   },
@@ -31,7 +37,9 @@
   },
   "MOONBEAM": {
     "nodeUrlArray": [
-      "https://moonbeam-alpha.api.onfinality.io/public"
+      "https://moonbeam-alpha.api.onfinality.io/public",
+      "https://rpc.testnet.moonbeam.network",
+      "https://rpc.api.moonbase.moonbeam.network"
     ],
     "contractAddress": "0x9274be9167c7dba7f81b61d3870e0272cb8474f6"
   },
@@ -44,20 +52,25 @@
   },
   "FTM": {
     "nodeUrlArray": [
-      "https://xapi.testnet.fantom.network/lachesis"
+      "https://xapi.testnet.fantom.network/lachesis",
+      "https://rpc.testnet.fantom.network",
+      "https://fantom-testnet.publicnode.com"
     ],
     "contractAddress": "0x265fc66e84939f36d90ee38734afe4a770d2c114"
   },
   "OPT": {
     "intervalTime": 2000,
     "nodeUrlArray": [
-      "https://goerli.optimism.io"
+      "https://goerli.optimism.io",
+      "https://endpoints.omniatech.io/v1/op/goerli/public",
+      "https://optimism-goerli.publicnode.com"
     ],
     "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
   },
   "XDC": {
     "nodeUrlArray": [
-      "https://erpc.apothem.network"
+      "https://erpc.apothem.network",
+      "https://apothem.xdcrpc.com"
     ],
     "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
   },
@@ -82,7 +95,8 @@
   },
   "ZEN": {
     "nodeUrlArray": [
-      "https://gobi-rpc.horizenlabs.io/ethv1"
+      "https://gobi-rpc.horizenlabs.io/ethv1",
+      "https://rpc.ankr.com/horizen_gobi_testnet"
     ],
     "contractAddress": "0x6e81e127a280cd17bebc7704ce28a0226295a12b"
   },

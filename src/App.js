@@ -206,7 +206,7 @@ const App = () => {
 
   const toggleNetwork = () => {
     setIsTestnet(!isTestnet);
-    const config = isTestnet ? require('./chainConfig.json') : require('./chainConfig-testnet.json');
+    const config = isTestnet ? require('./chainConfig-mainnet-set.json') : require('./chainConfig-testnet.json');
     setChainNodes(config);
   };
 
