@@ -272,9 +272,12 @@ const App = () => {
           </div>
           {chainNodes ? (
             <div>
-              {Object.entries(chainNodes).map(([chainType, config]) => (
-                <EthNodeStatus key={chainType} chainType={chainType} chainNodes={chainNodes} isAllExpanded={isAllExpanded} />
-              ))}
+                {Object.entries(chainNodes).map(([chainType, config]) => {
+                  if (chainNodes[chainType].contractAddress !== "") {
+                    return <EthNodeStatus key={chainType} chainType={chainType} chainNodes={chainNodes} isAllExpanded={isAllExpanded} />
+                  }
+                  return null;
+                })}
             </div>
           ) : (
             <div>No chain nodes data loaded.</div>

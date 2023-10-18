@@ -5,7 +5,9 @@
       "https://avax.meowrpc.com",
       "https://1rpc.io/avax/c"
     ],
-    "contractAddress": "0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a"
+    "contractAddress": "0x74e121a34a66d54c33f3291f2cdf26b1cd037c3a",
+    "confirmations":12,
+    "blockInterval":2.3
   },
   "ARB": {
     "nodeUrlArray": [
@@ -14,7 +16,9 @@
       "https://arbitrum-one.publicnode.com"
 
     ],
-    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613"
+    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
+    "confirmations":1,
+    "blockInterval":0.3
   },
   "BSC": {
     "nodeUrlArray": [
@@ -22,7 +26,9 @@
       "https://binance.llamarpc.com",
       "https://1rpc.io/bnb"
     ],
-    "contractAddress": "0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee"
+    "contractAddress": "0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee",
+    "confirmations":12,
+    "blockInterval":3
   },
   "ETH": {
     "nodeUrlArray": [
@@ -30,7 +36,9 @@
       "https://eth.drpc.org",
       "https://1rpc.io/eth"
     ],
-    "contractAddress": "0xfceaaaeb8d564a9d0e71ef36f027b9d162bc334e"
+    "contractAddress": "0xfceaaaeb8d564a9d0e71ef36f027b9d162bc334e",
+    "confirmations":6,
+    "blockInterval":12
   },
   "MATIC": {
     "nodeUrlArray": [
@@ -38,28 +46,36 @@
       "https://polygon.meowrpc.com",
       "https://1rpc.io/matic"
     ],
-    "contractAddress": "0x2216072a246a84f7b9ce0f1415dd239c9bf201ab"
+    "contractAddress": "0x2216072a246a84f7b9ce0f1415dd239c9bf201ab",
+    "confirmations":500,
+    "blockInterval":2
   },
   "GLMR": {
     "nodeUrlArray": [
       "https://rpc.api.moonbeam.network",
       "https://1rpc.io/glmr"
     ],
-    "contractAddress": "0x6372aec6263aa93eacedc994d38aa9117b6b95b5"
+    "contractAddress": "0x6372aec6263aa93eacedc994d38aa9117b6b95b5",
+    "confirmations":12,
+    "blockInterval":12
   },
   "MOONRIVER": {
     "nodeUrlArray": [
       "https://moonriver.api.onfinality.io/public",
       "https://moonriver-rpc.dwellir.com"
     ],
-    "contractAddress": "0xde1ae3c465354f01189150f3836c7c15a1d6671d"
+    "contractAddress": "0xde1ae3c465354f01189150f3836c7c15a1d6671d",
+    "confirmations":12,
+    "blockInterval":12
   },
   "WAN": {
     "intervalTime": 2000,
     "nodeUrlArray": [
       "https://nodes.wandevs.org/wan"
     ],
-    "contractAddress": "0xe85b0d89cbc670733d6a40a9450d8788be13da47"
+    "contractAddress": "0xe85b0d89cbc670733d6a40a9450d8788be13da47",
+    "confirmations":12,
+    "blockInterval":5
   },
   "FTM": {
     "nodeUrlArray": [
@@ -67,7 +83,9 @@
       "https://1rpc.io/ftm",
       "https://fantom.publicnode.com"
     ],
-    "contractAddress": "0xccffe9d337f3c1b16bd271d109e691246fd69ee3"
+    "contractAddress": "0xccffe9d337f3c1b16bd271d109e691246fd69ee3",
+    "confirmations":10,
+    "blockInterval":2.8
   },
   "OPT": {
     "intervalTime": 2000,
@@ -76,7 +94,9 @@
       "https://1rpc.io/op",
       "https://optimism.meowrpc.com"
     ],
-    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf"
+    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf",
+    "confirmations":1,
+    "blockInterval":2
   },
   "XDC": {
     "nodeUrlArray": [
@@ -85,52 +105,68 @@
       "https://erpc.xdcrpc.com"
 
     ],
-    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613"
+    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
+    "confirmations":32,
+    "blockInterval":2
   },
   "OKT": {
     "range": 300,
     "nodeUrlArray": [
       "https://exchainrpc.okex.org"
     ],
-    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613"
+    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
+    "confirmations":20,
+    "blockInterval":3.8
   },
   "CLV": {
     "nodeUrlArray": [
       "https://api-para.clover.finance"
     ],
-    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613"
+    "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
+    "confirmations":12,
+    "blockInterval":12
   },
   "FX": {
     "nodeUrlArray": [
       "https://fx-json-web3.functionx.io:8545",
       "https://fx-json-web3.portfolio-x.xyz:8545"
     ],
-    "contractAddress": "0xdf935552fac687123c642f589296762b632a9aaf"
+    "contractAddress": "0xdf935552fac687123c642f589296762b632a9aaf",
+    "confirmations":32,
+    "blockInterval":5.4
   },
   "ZEN": {
     "nodeUrlArray": [
       "https://eon-rpc.horizenlabs.io/ethv1"
     ],
-    "contractAddress": "0x97e0883493e8bb7a119a1e36e53ee9e7a2d3ca7b"
+    "contractAddress": "0x97e0883493e8bb7a119a1e36e53ee9e7a2d3ca7b",
+    "confirmations":100,
+    "blockInterval":19.2
   },
   "TLOS": {
     "nodeUrlArray": [
       "https://rpc1.eu.telos.net/evm",
       "https://mainnet.telos.net/evm"
     ],
-    "contractAddress": "0x201e5de97dfc46aace142b2009332c524c9d8d82"
+    "contractAddress": "0x201e5de97dfc46aace142b2009332c524c9d8d82",
+    "confirmations":120,
+    "blockInterval":0.5
   },
   "METIS": {
     "nodeUrlArray": [
       "https://andromeda.metis.io/?owner=1088"
     ],
-    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf"
+    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf",
+    "confirmations":30,
+    "blockInterval":2
   },
   "GTH": {
     "nodeUrlArray": [
       "https://mainnet.gather.network"
     ],
-    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf"
+    "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf",
+    "confirmations":20,
+    "blockInterval":13.2
   },
   "SGB": {
     "range": 30,
@@ -138,13 +174,86 @@
       "https://songbird-api.flare.network/ext/C/rpc",
       "https://sgb.ftso.com.au/ext/bc/C/rpc"
     ],
-    "contractAddress": "0xb8460Eeaa06Bc6668dad9fd42B661C0B96b3bE57"
+    "contractAddress": "0xb8460Eeaa06Bc6668dad9fd42B661C0B96b3bE57",
+    "confirmations":100,
+    "blockInterval":1
   },
   "ASTR": {
     "nodeUrlArray": [
       "https://evm.astar.network",
       "https://1rpc.io/astr"
     ],
-    "contractAddress": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6"
+    "contractAddress": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6",
+    "confirmations":3,
+    "blockInterval":12
+  },
+  "VC": {
+    "nodeUrlArray": [
+      "https://vinuchain-rpc.com"
+    ],
+    "contractAddress": "0x72ccf64ee5e2c7629ee4eee3e6ad6990289178ae",
+    "confirmations":10,
+    "blockInterval":65.7
+  },
+  "TRX": {
+    "nodeUrlArray": [
+      "https://api.trongrid.io"
+    ],
+    "contractAddress": "",
+    "confirmations":20,
+    "blockInterval":3
+  },
+  "BTC": {
+    "nodeUrlArray": [
+      "nodes.wandevs.org:26893",
+      "54.70.14.135:26893"
+    ],
+    "contractAddress": "",
+    "confirmations":2,
+    "blockInterval":493.5
+  },
+  "LTC": {
+    "nodeUrlArray": [
+      "nodes.wandevs.org:26894",
+      "52.13.145.199:26894"
+    ],
+    "contractAddress": "",
+    "confirmations":4,
+    "blockInterval":86.7
+  },
+  "DOGE": {
+    "nodeUrlArray": [
+      "nodes.wandevs.org:26895",
+      "44.239.180.2:26895"
+    ],
+    "contractAddress": "",
+    "confirmations":9,
+    "blockInterval":57.6
+  },
+  "XRP": {
+    "nodeUrlArray": [
+      "wss://nodes.wandevs.org/xrp",
+      "ws://35.84.69.114:8000"
+    ],
+    "contractAddress": "",
+    "confirmations":1,
+    "blockInterval":3.9
+  },
+  "DOT": {
+    "nodeUrlArray": [
+      "wss://nodes.wandevs.org/polkadot",
+      "ws://44.233.241.158:9944"
+    ],
+    "contractAddress": "",
+    "confirmations":2,
+    "blockInterval":5.4
+  },
+  "ADA": {
+    "nodeUrlArray": [
+      "https://nodes.wandevs.org/cardano"
+    ],
+    "contractAddress": "",
+    "confirmations":30,
+    "blockInterval":12
   }
 }
