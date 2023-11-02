@@ -22,9 +22,11 @@
   },
   "BSC": {
     "nodeUrlArray": [
-      "https://bsc-rpc.gateway.pokt.network",
       "https://binance.llamarpc.com",
-      "https://1rpc.io/bnb"
+      "https://1rpc.io/bnb",
+      "https://bsc.publicnode.com",
+      "https://rpc.ankr.com/bsc",
+      "https://bsc.meowrpc.com"
     ],
     "contractAddress": "0xc3711bdbe7e3063bf6c22e7fed42f782ac82baee",
     "confirmations":12,
@@ -100,8 +102,8 @@
   },
   "XDC": {
     "nodeUrlArray": [
-      "https://rpc.xinfin.network",
-      "https://rpc1.xinfin.network",
+      "https://rpc.ankr.com/xdc",
+      "https://rpc.xdc.org",
       "https://erpc.xdcrpc.com"
 
     ],
@@ -194,6 +196,22 @@
     "contractAddress": "0x72ccf64ee5e2c7629ee4eee3e6ad6990289178ae",
     "confirmations":10,
     "blockInterval":65.7
+  },
+  "BASEETH": {
+    "nodeUrlArray": [
+      "https://base.publicnode.com"
+    ],
+    "contractAddress": "0x2715aa7156634256ae75240c2c5543814660cd04",
+    "confirmations":200,
+    "blockInterval":2
+  },
+  "NRG": {
+    "nodeUrlArray": [
+      "https://nodeapi.energi.network"
+    ],
+    "contractAddress": "0xbe5187c2a7eb776c1caeed2c37e7599fb05000d3",
+    "confirmations":30,
+    "blockInterval":60
   },
   "TRX": {
     "nodeUrlArray": [
