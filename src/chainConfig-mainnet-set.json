@@ -182,8 +182,10 @@
   },
   "ASTR": {
     "nodeUrlArray": [
+      "https://astar-rpc.dwellir.com",
       "https://evm.astar.network",
-      "https://1rpc.io/astr"
+      "https://1rpc.io/astr",
+      "https://astar.api.onfinality.io/public"
     ],
     "contractAddress": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6",
     "confirmations":3,
@@ -212,6 +214,50 @@
     "contractAddress": "0xbe5187c2a7eb776c1caeed2c37e7599fb05000d3",
     "confirmations":30,
     "blockInterval":60
+  },
+  "ZKETH": {
+    "nodeUrlArray": [
+      "https://mainnet.era.zksync.io",
+      "https://1rpc.io/zksync2-era",
+      "https://zksync-era.blockpi.network/v1/rpc/public",
+      "https://zksync.meowrpc.com"
+    ],
+    "contractAddress": "0x102f0ce7a439d51247167d6233a0a44c3f8389a1",
+    "confirmations":30,
+    "blockInterval":1
+  },
+  "BROCK": {
+    "nodeUrlArray": [
+      "https://connect.bit-rock.io",
+      "https://brockrpc.io"
+    ],
+    "contractAddress": "0xc21e5553c8dddf2e4a93e5bedbae436d4291f603",
+    "confirmations":64,
+    "blockInterval":2
+  },
+  "LINEAETH": {
+    "nodeUrlArray": [
+      "https://linea.blockpi.network/v1/rpc/public",
+      "https://rpc.linea.build",
+      "https://linea.drpc.org"
+    ],
+    "contractAddress": "0xffb876bd5bee99e992cac826a04396002f5f4a65",
+    "confirmations":64,
+    "blockInterval":6
+  },
+  "MATICETH": {
+    "nodeUrlArray": [
+      "https://zkevm-rpc.com",
+      "https://polygon-zkevm.drpc.org",
+      "https://polygon-zkevm.blockpi.network/v1/rpc/public",
+      "https://rpc.ankr.com/polygon_zkevm",
+      "https://polygon-zkevm-mainnet.public.blastapi.io",
+      "https://1rpc.io/polygon/zkevm"
+    ],
+    "contractAddress": "0xB13aFe3e965DcD483022b1CC3Adf03Eea039A754",
+    "intervalTime": 1000,
+    "confirmations":300,
+    "blockInterval":6
   },
   "TRX": {
     "nodeUrlArray": [

@@ -172,9 +172,11 @@
   },
   "ASTR": {
     "nodeUrlArray": [
+      "https://astar-rpc.dwellir.com",
       "https://evm.astar.network",
       "https://astar.public.blastapi.io",
-      "https://1rpc.io/astr"
+      "https://1rpc.io/astr",
+      "https://astar.api.onfinality.io/public"
     ],
     "contractAddress": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6"
   }
