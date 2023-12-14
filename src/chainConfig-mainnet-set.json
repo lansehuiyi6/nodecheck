@@ -242,6 +242,7 @@
       "https://linea.drpc.org"
     ],
     "contractAddress": "0xffb876bd5bee99e992cac826a04396002f5f4a65",
+    "range": 1000,
     "confirmations":64,
     "blockInterval":6
   },
@@ -255,7 +256,7 @@
       "https://1rpc.io/polygon/zkevm"
     ],
     "contractAddress": "0xB13aFe3e965DcD483022b1CC3Adf03Eea039A754",
-    "intervalTime": 1000,
+    "range": 1000,
     "confirmations":300,
     "blockInterval":6
   },
