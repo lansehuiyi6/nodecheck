@@ -14,7 +14,6 @@
       "https://arb1.arbitrum.io/rpc",
       "https://1rpc.io/arb",
       "https://arbitrum-one.publicnode.com"
-
     ],
     "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
     "confirmations":1,
@@ -63,8 +62,10 @@
   },
   "MOONRIVER": {
     "nodeUrlArray": [
-      "https://moonriver.api.onfinality.io/public",
-      "https://moonriver-rpc.dwellir.com"
+      "https://moonriver.unitedbloc.com:2000",
+      "https://moonriver-rpc.dwellir.com",
+      "https://rpc.api.moonriver.moonbeam.network",
+      "https://moonriver.api.onfinality.io/public"
     ],
     "contractAddress": "0xde1ae3c465354f01189150f3836c7c15a1d6671d",
     "confirmations":12,
@@ -103,9 +104,8 @@
   "XDC": {
     "nodeUrlArray": [
       "https://rpc.ankr.com/xdc",
-      "https://rpc.xdc.org",
-      "https://erpc.xdcrpc.com"
-
+      "https://rpc.xdcrpc.com",
+      "https://erpc.xinfin.network"
     ],
     "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
     "confirmations":32,
@@ -139,7 +139,8 @@
   },
   "ZEN": {
     "nodeUrlArray": [
-      "https://eon-rpc.horizenlabs.io/ethv1"
+      "https://eon-rpc.horizenlabs.io/ethv1",
+      "https://rpc.ankr.com/horizen_eon"
     ],
     "contractAddress": "0x97e0883493e8bb7a119a1e36e53ee9e7a2d3ca7b",
     "confirmations":100,
@@ -147,7 +148,8 @@
   },
   "TLOS": {
     "nodeUrlArray": [
-      "https://rpc1.eu.telos.net/evm",
+      "https://api.kainosbp.com/evm",
+      "https://rpc1.us.telos.net/evm",
       "https://mainnet.telos.net/evm"
     ],
     "contractAddress": "0x201e5de97dfc46aace142b2009332c524c9d8d82",
@@ -156,7 +158,10 @@
   },
   "METIS": {
     "nodeUrlArray": [
-      "https://andromeda.metis.io/?owner=1088"
+      "https://andromeda.metis.io/?owner=1088",
+      "https://metis-mainnet.public.blastapi.io",
+      "https://metis.drpc.org",
+      "https://metis.api.onfinality.io/public"
     ],
     "contractAddress": "0xc6ae1db6c66d909f7bfeeeb24f9adb8620bf9dbf",
     "confirmations":30,
@@ -184,7 +189,6 @@
     "nodeUrlArray": [
       "https://astar-rpc.dwellir.com",
       "https://evm.astar.network",
-      "https://1rpc.io/astr",
       "https://astar.api.onfinality.io/public"
     ],
     "contractAddress": "0x592de30bebff484b5a43a6e8e3ec1a814902e0b6",
@@ -216,11 +220,11 @@
     "blockInterval":60
   },
   "ZKETH": {
+    "range": 1000,
     "nodeUrlArray": [
       "https://mainnet.era.zksync.io",
       "https://1rpc.io/zksync2-era",
-      "https://zksync-era.blockpi.network/v1/rpc/public",
-      "https://zksync.meowrpc.com"
+      "https://zksync-era.blockpi.network/v1/rpc/public"
     ],
     "contractAddress": "0x102f0ce7a439d51247167d6233a0a44c3f8389a1",
     "confirmations":30,
@@ -250,14 +254,55 @@
     "nodeUrlArray": [
       "https://zkevm-rpc.com",
       "https://polygon-zkevm.drpc.org",
-      "https://polygon-zkevm.blockpi.network/v1/rpc/public",
-      "https://rpc.ankr.com/polygon_zkevm",
-      "https://polygon-zkevm-mainnet.public.blastapi.io",
-      "https://1rpc.io/polygon/zkevm"
+      "https://rpc.ankr.com/polygon_zkevm"
     ],
     "contractAddress": "0xB13aFe3e965DcD483022b1CC3Adf03Eea039A754",
     "range": 1000,
     "confirmations":300,
+    "blockInterval":6
+  },
+  "OPBNB": {
+    "nodeUrlArray": [
+      "https://opbnb-mainnet-rpc.bnbchain.org",
+      "https://opbnb-rpc.publicnode.com",
+      "https://1rpc.io/opbnb"
+    ],
+    "contractAddress": "0xd6b24d0867753082e40778addb13e462a02689de",
+    "range": 2000,
+    "confirmations":12,
+    "blockInterval":1
+  },
+  "CELO": {
+    "nodeUrlArray": [
+      "https://forno.celo.org",
+      "https://rpc.ankr.com/celo",
+      "https://1rpc.io/celo",
+      "https://celo.api.onfinality.io/public"
+    ],
+    "contractAddress": "0x14ca89ac9cd73b01bf71a3af3f8cf8fd224d6a1d",
+    "range": 2000,
+    "confirmations":80,
+    "blockInterval":5
+  },
+  "GMELD": {
+    "nodeUrlArray": [
+      "https://rpc-1.meld.com"
+    ],
+    "contractAddress": "0xc21e5553c8dddf2e4a93e5bedbae436d4291f603",
+    "range": 2000,
+    "confirmations":12,
+    "blockInterval":6
+  },
+  "BLASTETH": {
+    "nodeUrlArray": [
+      "https://rpc.blast.io",
+      "https://blast.blockpi.network/v1/rpc/public",
+      "https://rpc.ankr.com/blast",
+      "https://blastl2-mainnet.public.blastapi.io"
+    ],
+    "contractAddress": "0xc21e5553c8dddf2e4a93e5bedbae436d4291f603",
+    "range": 1000,
+    "confirmations":600,
     "blockInterval":6
   },
   "TRX": {

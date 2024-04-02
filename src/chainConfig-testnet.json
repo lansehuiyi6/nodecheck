@@ -8,26 +8,28 @@
     "contractAddress": "0x4c200a0867753454db78af84d147bd03e567f234"
   },
   "ARB": {
+    "range": 1000,
     "nodeUrlArray": [
-      "https://goerli-rollup.arbitrum.io/rpc",
-      "https://arbitrum-goerli.publicnode.com"
+      "https://arbitrum-sepolia.blockpi.network/v1/rpc/public",
+      "https://sepolia-rollup.arbitrum.io/rpc"
     ],
-    "contractAddress": "0x3e18014f7c11f4d70b0023d8f61350a3ef8f0978"
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
   },
   "BSC": {
     "nodeUrlArray": [
+      "https://endpoints.omniatech.io/v1/bsc/testnet/public",
+      "https://public.stackup.sh/api/v1/node/bsc-testnet",
       "https://bsc-testnet.publicnode.com"
-
     ],
     "contractAddress": "0xb12513cfcb13b7be59ba431c040b7206b0a211b9"
   },
   "ETH": {
+    "range": 1000,
     "nodeUrlArray": [
-      "https://ethereum-goerli.publicnode.com",
-      "https://eth-goerli.api.onfinality.io/public"
-
+      "https://ethereum-sepolia.publicnode.com",
+      "https://ethereum-sepolia.blockpi.network/v1/rpc/public"
     ],
-    "contractAddress": "0xb8460eeaa06bc6668dad9fd42b661c0b96b3be57"
+    "contractAddress": "0x589e12d073020f99febf32b739e58216748c9ed4"
   },
   "MATIC": {
     "nodeUrlArray": [
@@ -60,17 +62,17 @@
   },
   "OPT": {
     "intervalTime": 2000,
+    "range": 1000,
     "nodeUrlArray": [
-      "https://goerli.optimism.io",
-      "https://endpoints.omniatech.io/v1/op/goerli/public",
-      "https://optimism-goerli.publicnode.com"
+      "https://sepolia.optimism.io",
+      "https://optimism-sepolia.blockpi.network/v1/rpc/public"
     ],
-    "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
   },
   "XDC": {
     "nodeUrlArray": [
-      "https://erpc.apothem.network",
-      "https://apothem.xdcrpc.com"
+      "https://rpc.apothem.network",
+      "https://erpc.apothem.network"
     ],
     "contractAddress": "0x18edfe1e49ca89157384832482c66e95ea9b0fca"
   },
@@ -93,18 +95,103 @@
     ],
     "contractAddress": "0x4f1ab74c2a9e8f591e8a80768e115c9f75935bad"
   },
+  "ZKETH": {
+    "nodeUrlArray": [
+      "https://sepolia.era.zksync.dev"
+    ],
+    "contractAddress": "0x18de061bb6b635d114a9ea8721a6c63d0f6f3571"
+  },
+  "OKB": {
+    "range": 1000,
+    "nodeUrlArray": [
+      "https://testrpc.x1.tech",
+      "https://x1testrpc.okx.com",
+      "https://x1-testnet.blockpi.network/v1/rpc/public"
+    ],
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
+  },
+  "VC": {
+    "nodeUrlArray": [
+      "https://vinufoundation-rpc.com"
+    ],
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
+  },
+  "LINEAETH": {
+    "nodeUrlArray": [
+      "https://rpc.goerli.linea.build/"
+    ],
+    "contractAddress": "0x4bafcf6dd1f05a90ea80e2a0419cf1d9c79e0049"
+  },
   "ZEN": {
     "nodeUrlArray": [
-      "https://gobi-rpc.horizenlabs.io/ethv1",
-      "https://rpc.ankr.com/horizen_gobi_testnet"
+      "https://rpc.ankr.com/horizen_gobi_testnet",
+      "https://gobi-rpc.horizenlabs.io/ethv1"
     ],
     "contractAddress": "0x6e81e127a280cd17bebc7704ce28a0226295a12b"
+  },
+  "MATICETH": {
+    "nodeUrlArray": [
+      "https://rpc.public.zkevm-test.net"
+    ],
+    "contractAddress": "0x318dd97b7712afa80fe40becc0dc0d309ba607f1"
+  },
+  "BLASTETH": {
+    "range": 1000,
+    "nodeUrlArray": [
+      "https://sepolia.blast.io",
+      "https://blast-sepolia.blockpi.network/v1/rpc/public"
+    ],
+    "contractAddress": "0xd6b24d0867753082e40778addb13e462a02689de"
+  },
+  "BROCK": {
+    "nodeUrlArray": [
+      "https://testnet.bit-rock.io"
+    ],
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
   },
   "TLOS": {
     "nodeUrlArray": [
       "https://testnet.telos.net/evm"
     ],
     "contractAddress": "0xfc9a863edfea47f6e4e6954be978d447133d87ce"
+  },
+  "NRG": {
+    "nodeUrlArray": [
+      "https://nodeapi.test.energi.network"
+    ],
+    "contractAddress": "0x95492fd2f5b2d2e558e8af811f951e2dcbc846d3"
+  },
+  "ASTR": {
+    "nodeUrlArray": [
+      "https://evm.shibuya.astar.network"
+    ],
+    "contractAddress": "0x0758fe272ab2dedcd182b84d3e3f9310f21a4153"
+  },
+  "BASEETH": {
+    "range": 1000,
+    "nodeUrlArray": [
+      "https://sepolia.base.org",
+      "https://base-sepolia.blockpi.network/v1/rpc/public"
+    ],
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
+  },
+  "OPBNB": {
+    "nodeUrlArray": [
+      "https://opbnb-testnet-rpc.bnbchain.org/"
+    ],
+    "contractAddress": "0x34cd1ce396c29075381fd2c61b0959ce640fecc9"
+  },
+  "CELO": {
+    "nodeUrlArray": [
+      "https://alfajores-forno.celo-testnet.org"
+    ],
+    "contractAddress": "0xc12cf8cc8eff1f39c9e60da81d11745c25c59501"
+  },
+  "GMELD": {
+    "nodeUrlArray": [
+      "https://testnet-rpc.meld.com"
+    ],
+    "contractAddress": "0x08bad1a48b0b08bf769f83ba30c1dad0f8bb8b6b"
   },
   "METIS": {
     "nodeUrlArray": [
@@ -118,35 +205,11 @@
     ],
     "contractAddress": "0x7e0195a43a5dd27c507a1f0b2371d543c9e4dfc9"
   },
-  "OKB": {
-    "nodeUrlArray": [
-      "https://okbtestrpc.okbchain.org"
-    ],
-    "contractAddress": "0x4a9f99ceb037e8c4fbec272d17d40282aa67d9c6"
-  },
   "SGB": {
     "range": 30,
     "nodeUrlArray": [
       "https://coston-api.flare.network/ext/C/rpc"
     ],
     "contractAddress": "0xfc9a863edfea47f6e4e6954be978d447133d87ce"
-  },
-  "MATICETH": {
-    "nodeUrlArray": [
-      "https://rpc.public.zkevm-test.net"
-    ],
-    "contractAddress": "0xdf9efdc523407e8657a2d4f1ef4dd2aca51ceabb"
-  },
-  "ASTR": {
-    "nodeUrlArray": [
-      "https://evm.shibuya.astar.network"
-    ],
-    "contractAddress": "0x0758fe272ab2dedcd182b84d3e3f9310f21a4153"
-  },
-  "ZKETH": {
-    "nodeUrlArray": [
-      "https://testnet.era.zksync.dev"
-    ],
-    "contractAddress": "0xa2374ca12c744d6297c1954149b3e912742a782d"
   }
 }
