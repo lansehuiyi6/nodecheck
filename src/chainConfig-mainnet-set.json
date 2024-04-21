@@ -305,6 +305,17 @@
     "confirmations":600,
     "blockInterval":6
   },
+  "OKB": {
+    "nodeUrlArray": [
+      "https://rpc.xlayer.tech",
+      "https://xlayerrpc.okx.com",
+      "https://endpoints.omniatech.io/v1/xlayer/mainnet/public"
+    ],
+    "contractAddress": "0xc21e5553c8dddf2e4a93e5bedbae436d4291f603",
+    "range": 1000,
+    "confirmations":150,
+    "blockInterval":6
+  },
   "TRX": {
     "nodeUrlArray": [
       "https://api.trongrid.io"
