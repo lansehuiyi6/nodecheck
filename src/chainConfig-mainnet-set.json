@@ -33,8 +33,13 @@
   },
   "ETH": {
     "nodeUrlArray": [
+      "https://rpc.ankr.com/eth",
+      "https://cloudflare-eth.com",
+      "https://eth.meowrpc.com",
+      "https://ethereum-rpc.publicnode.com",
+      "https://rpc.mevblocker.io",
       "https://ethereum.publicnode.com",
-      "https://eth.drpc.org",
+      "https://gateway.tenderly.co/public/mainnet",
       "https://1rpc.io/eth"
     ],
     "contractAddress": "0xfceaaaeb8d564a9d0e71ef36f027b9d162bc334e",
@@ -105,7 +110,11 @@
     "nodeUrlArray": [
       "https://rpc.ankr.com/xdc",
       "https://rpc.xdcrpc.com",
-      "https://erpc.xinfin.network"
+      "https://erpc.xinfin.network",
+      "https://rpc1.xinfin.network",
+      "https://erpc.xdcrpc.com",
+      "https://rpc.xdc.org",
+      "https://rpc.xinfin.network"
     ],
     "contractAddress": "0xf7ba155556e2cd4dfe3fe26e506a14d2f4b97613",
     "confirmations":32,
