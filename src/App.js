@@ -77,7 +77,7 @@ const EthNodeStatus = ({ chainType, chainNodes, isAllExpanded }) => {
             return {
               nodeIndex: index + 1,
               rpcServerAddress: node,
-              error: err.message ? "blockNumber " +  blockNumber + " " + err.message : "blockNumber " +  blockNumber + " " + err
+              error: err.message ? "blockNumber " +  blockNumber + "range" + range + " " + err.message : "blockNumber " +  blockNumber + "range" + range + " " + err
             };
           }
 
